@@ -1,16 +1,23 @@
 <html>
 	<head>
 		<style>
-			.container {
-				border: 10px solid black;
-				display: inline-flex;
-				height: 100vh;
-			}
+		body {
+			margin: 0 ; padding: 0;
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+
+	
+
 			.box {
 				color: #fff;
 				font-size: 100px;
 				padding: 10px;
 			}
+
 			.box1 {
 				background: red;
 			}
@@ -22,6 +29,15 @@
 			}
 			.box4 {
 				background: green;
+			}
+
+			.container {
+				border: 10px solid black;
+				display: inline-flex;
+				/*this is the defaultflex-direction: row;*/
+				/*flex-direction: row-reverse;*/
+				flex-direction: column;
+				min-height: 100vh;	
 			}
 
 		</style>
